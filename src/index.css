@@ -1,0 +1,110 @@
+h1 {
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  font-family: "Fredoka", sans-serif;
+  font-size: 5vh;
+  font-weight: normal;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  font-family: "Fredoka", sans-serif;
+  font-size: 3vh;
+  font-weight: normal;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  font-family: "Fredoka", sans-serif;
+  font-size: 2vh;
+  font-weight: normal;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  font-family: "Fredoka", sans-serif;
+  font-size: 2vh;
+}
+
+img {
+  width: 10vw;
+}
+
+i {
+  padding-left: 0.3vw;
+}
+
+body {
+  margin: 0;
+  height: 80vh;
+  padding-top: 10vh;
+}
+
+.container {
+  display: flex;
+  gap: 5vw;
+  padding: 10vh 10vw;
+  align-items: center ;
+  justify-content: center;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #adadad;
+  padding: 2vh 2vw;
+  border-radius: 1vw;
+}
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  background: #3EB489;
+  background: radial-gradient(circle, rgba(62, 180, 137, 1) 0%, rgba(62, 180, 123, 1) 100%);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 0.5vh solid rgba(116, 116, 116, 0.529);
+  
+}
+
+.nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-bar button {
+  font-family: "Fredoka", sans-serif;
+  border: 0;
+  font-size: 3vh;
+  color: #000;
+  background-color: #3eb489;
+  box-shadow: 0 0 0 3px #3eb489;
+  border-radius: 0.8vw;
+  padding: 0.3vh 0.3vw;
+  transition: 0.1s;
+}
+
+.nav-bar button:hover {
+  box-shadow: 0 0 0 3px #000000;
+  transition: 0.1s;
+}
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: #c3c3c3;
+  position: relative;
+  bottom: 0;
+  border-top: 0.5vh solid rgba(116, 116, 116, 0.529);
+}
