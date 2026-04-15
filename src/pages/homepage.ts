@@ -1,8 +1,8 @@
-import { Button } from "../components/buttons/button";
 import imageLol from '../assets/image.png'
+import { Card } from '../components/cards/card';
 
 export function homePage(): HTMLElement {
-  const container = document.createElement('div');
+	const container = document.createElement('div');
 	container.className = "container";
 
 	const block = document.createElement('div');
@@ -20,8 +20,10 @@ export function homePage(): HTMLElement {
 	const textTitle = document.createElement('h1');
 	textTitle.textContent = "Very professional web developer"
 
+	const testCard = Card({title: "Test", content: "test"});
+
 	block.append(image, textBlock, textBlock2);
-	container.append(block,textTitle)
+	container.append(block,textTitle,testCard)
 
 	return container;
 }
