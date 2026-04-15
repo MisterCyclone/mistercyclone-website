@@ -1,4 +1,4 @@
-import { Button } from "../buttons/button";
+import { navBar } from "./nav-bar";
 
 export function Header(): HTMLElement {
     const container = document.createElement('header');
@@ -7,19 +7,10 @@ export function Header(): HTMLElement {
     const title = document.createElement('h1');
     title.textContent = "MisterCyclone";
 
-    const navigationBar = document.createElement('div');
-    navigationBar.className = "nav-bar"
-
-    const homeButton = Button("Home");
-    const projectsButton = Button("Projects");
-    const blogButton = Button("Blog");
-    const contactButton = Button("Contact");
-
-    navigationBar.append(homeButton, projectsButton, blogButton, contactButton)
+    const navigationBar = navBar();
 
     container.append(title, navigationBar);
 
-    
     // header.innerHTML = `
     //   <div class="header">
     //     <h1>Alfie Skinner / MisterCyclone</h1>
