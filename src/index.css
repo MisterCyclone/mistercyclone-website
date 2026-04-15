@@ -85,7 +85,7 @@ body {
 }
 
 
-.button {
+.nav-bar button {
   font-family: "Fredoka", sans-serif;
   border: 0;
   font-size: 3vh;
@@ -97,7 +97,7 @@ body {
   transition: 0.1s;
 }
 
-.button:hover {
+.nav-bar button:hover {
   box-shadow: 0 0 0 3px #000000;
   transition: 0.1s;
 }
