@@ -1,0 +1,26 @@
+{
+  "Linces Softco Limited": {
+    "role": "Freelance Website Developer",
+    "place": "Linces Softco Limited",
+    "timeframe": "February 2026 - April 2026",
+    "description": "I was approached to design a professional website for my client."
+  },
+  "The JT Group": {
+    "role": "Software Developer",
+    "place": "The JT Group",
+    "timeframe": "August 2024 - July 2025",
+    "description": "I was tasked with designing a web-based dashboard that displays managerial level data, it needed to be able to filter based on a date range given or timeframe size. Being able to diaplay individual days of data over a week to mutiple weeks within a month."
+  },
+  "Willowbank": {
+    "role": "Frontend Developer",
+    "place": "Willowbank Education",
+    "timeframe": "January 2024 - May 2024",
+    "description": "This job was an oppertunity for real-world experience as part of the web-development module in university. My role was to build components to be used in the frontend."
+  },
+  "Cherrytree": {
+    "role": "Games Programmer & Director",
+    "place": "Cherry Tree Primary School and Nursery",
+    "timeframe": "January 2021 - April 2021",
+    "description": "This was an internship oppertunity presented in college where in groups we were tasked to create educational games for children in years 5-6 with special educational needs.\n\nI took for role as the director and main programmer and created a complete game where you have to count how many fish pass by odd and funny types of submarine windows."
+  }
+}
