@@ -1,14 +1,20 @@
 import React from "react"
-import NavButton from "./nav-button"
+import { NavLink } from "react-router-dom"
 
-const NavBar: React.FC = () => {
+interface NavBarProps {
+  links : {
+    label: string;
+    routeTo: string; 
+  }[];
+}
+
+const NavBar: React.FC<NavBarProps> = ({links}) => {
 
   return (
     <div className="nav-bar">
-      <NavButton label="Home"/>
-      <NavButton label="Projects"/>
-      <NavButton label="Blog"/>
-      <NavButton label="Contact"/>
+      {links.map((link) => (
+        <NavLink className="nav-bar-button" to={link.routeTo}>{link.label}</NavLink>
+      ))}
     </div>
   )
 }
