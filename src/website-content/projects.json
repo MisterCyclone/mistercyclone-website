@@ -1,0 +1,26 @@
+{
+  "Slaughterhouse 9": {
+    "title": "Slaughterhouse 9",
+    "description": "Slaughterhouse 9 is a survival horror RPGMaker horror game developed by TeamAfterMath Games, a studio consisting of a friend of mine, the main director and artist. And myself, the lead programmer.",
+    "efforts": "I have contributed to the project by programming custom RPGMaker MV plugins to create custom battle logic and creates a system out of existing plugins with different uses.",
+    "tags": ["Animation", "JavaScript", "Game Design", "RPGMaker"]
+  },
+  "Cafe Game": {
+    "title": "Cuppa of Conspiracy",
+    "description": "Cuppa of Conspiracy is a turn-based dungeon crawler crime thriller made in RPGMaker MZ. It is my solo project I work on in my free time. It is a heavily modified version of RPGMaker MZ with custom JavaScript plugins. ",
+    "efforts": "I have written myself to change the fundamental functionality of the engine with an entirely different battle system and all new mechanics.",
+    "tags": ["JavaScript", "Game Direction", "Game Design", "RPGMaker"]
+  },
+  "Gremlin Party 64": {
+    "title": "Gremlin Party 64",
+    "description": "Gremlin Party 64 is a platform fighter currently in-development, inspired by Super Smash Bros. 64 with a grungy early 2000's style.",
+    "efforts": "My involvement in this project is small but I am currently overseeing the development of two playable fighters which are characters that I have own and have created. I have designed the movesets and are responsible for feedback on artistic direction for translating the character designs to fit in the game.",
+    "tags": ["Game Direction", "Game Design", "Art Direction"]
+  },
+  "Holdin' Grudges": {
+    "title": "Holdin' Grudges",
+    "description": "Gremlin Party 64 is a platform fighter currently in-development, inspired by Super Smash Bros. 64 with a grungy early 2000's style.",
+    "efforts": "My involvement in this project is small but I am currently overseeing the development of two playable fighters which are characters that I have own and have created. I have designed the movesets and are responsible for feedback on artistic direction for translating the character designs to fit in the game.",
+    "tags": ["GameMaker Language", "Level Design", "Game Maker"]
+  }
+}
