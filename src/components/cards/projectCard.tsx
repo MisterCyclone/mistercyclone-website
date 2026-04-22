@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectTag from "../multiples/project-tag";
-
-import './project-card.css'
+import './projectCard.css'
 
 interface ProjectCardProps {
   title?: string;
