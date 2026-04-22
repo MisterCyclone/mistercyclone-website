@@ -1,0 +1,20 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 1vw;
+  padding: 1.5vh 1vw;
+  border-radius: 0.50vw;
+  background-color: white;
+  box-shadow: 0 0 0 2px #3eb489;
+  margin: 3vh 0;
+}
+
+.education-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.50vw;
+  transition: 0.1s;
+  width: 70vw;
+  white-space: pre-line;
+}
