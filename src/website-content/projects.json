@@ -11,9 +11,9 @@
     "efforts": "I have written myself to change the fundamental functionality of the engine with an entirely different battle system and all new mechanics.",
     "tags": ["JavaScript", "Game Direction", "Game Design", "RPGMaker"]
   },
-  "Gremlin Party 64": {
-    "title": "Gremlin Party 64",
-    "description": "Gremlin Party 64 is a platform fighter currently in-development, inspired by Super Smash Bros. 64 with a grungy early 2000's style.",
+  "Gremlin Party 03": {
+    "title": "Gremlin Party '03",
+    "description": "Gremlin Party '03 is a platform fighter currently in-development, inspired by Super Smash Bros. 64 with a grungy early 2000's style.",
     "efforts": "My involvement in this project is small but I am currently overseeing the development of two playable fighters which are characters that I have own and have created. I have designed the movesets and are responsible for feedback on artistic direction for translating the character designs to fit in the game.",
     "tags": ["Game Direction", "Game Design", "Art Direction"]
   },
@@ -21,6 +21,6 @@
     "title": "Holdin' Grudges",
     "description": "Gremlin Party 64 is a platform fighter currently in-development, inspired by Super Smash Bros. 64 with a grungy early 2000's style.",
     "efforts": "My involvement in this project is small but I am currently overseeing the development of two playable fighters which are characters that I have own and have created. I have designed the movesets and are responsible for feedback on artistic direction for translating the character designs to fit in the game.",
-    "tags": ["GameMaker Language", "Level Design", "Game Maker"]
+    "tags": ["GameMaker Language", "Level Design", "Game Maker", "OOP"]
   }
 }

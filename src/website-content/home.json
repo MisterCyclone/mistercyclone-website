@@ -1,0 +1,22 @@
+{
+  "about-me": {
+    "pageName": "About Me",
+    "routeTo": "/about",
+    "description": "About Me"
+  },
+  "experience": {
+    "pageName": "Experience & Education",
+    "routeTo": "/experience",
+    "description": "Contains my education and work experience."
+  },
+  "projects": {
+    "pageName": "Projects",
+    "routeTo": "/projects",
+    "description": "Explore "
+  },
+  "contact": {
+    "pageName": "Contact",
+    "routeTo": "/contact",
+    "description": "Get in touch!"
+  }
+}

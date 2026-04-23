@@ -1,0 +1,8 @@
+{
+  "about-me": {
+    "title": "About Myself",
+    "description": "Hello! I'm Alfie Skinner, frontend developer, with a focus in website development.  And a gameplay programmer, I've recently graduated from Canterbury Christ Church University in 2025 with a Bachelor of Science in Computer Science with a first class.\n\nI've have experience leading small teams inside and outside of university using methodologies like Waterfall and Agile. When not in a leadership position I am very flexible and can adapt to a leaders structure.\n\nWhen developing my professional standards for programming I have learned to place importance in reuseability and ease of use in my work. Allowing for easier team communication and efficiency. This is also important for clients too as it can remove friction from maintenance post handover.\n\nIn my spare time I like to lend my skills to help creatives around me, currently in my rotation I help out with:",
+    "currentProjects": ["Being a lead programmer on a friend's game.","Playtesting a project from someone in the games industry."],
+    "descriptionTwo": "\nOutside of my profession I enjoy cooking, nature walks, playing Dungeons & Dragons with friends and taking care of my dogs. In the past I've ran charity fundraiser events when I used to do online streaming entertainment when I was a teenager."
+  }
+}
