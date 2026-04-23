@@ -1,0 +1,15 @@
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0vh 10vw;
+  align-items: center ;
+  justify-content: space-evenly;
+  height: 90vh;
+}
+
+.home-container {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fill,35vw);
+  gap: 5vw;
+}
