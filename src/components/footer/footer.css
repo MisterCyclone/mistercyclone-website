@@ -1,0 +1,53 @@
+footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #c3c3c3;
+  position: relative;
+  bottom: 0;
+  border-top: 0.5vh solid rgba(116, 116, 116, 0.529);
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+.footer-link-stack {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+
+.footer-link {
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+  font-family: "Fredoka", sans-serif;
+  font-size: 3vh;
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-link-email:hover {
+  color: #ff5353;
+  transition: 0.3s;
+}
+
+.footer-link-github:hover {
+  color: #3EB489;
+  transition: 0.3s;
+}
+
+.footer-link-linkedin:hover {
+  color: #0077B5;
+  transition: 0.3s;
+}
+
+.footer-icon {
+  padding-right: 0.5vw;
+}
