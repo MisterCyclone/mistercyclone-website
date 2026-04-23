@@ -1,0 +1,35 @@
+header {
+  width: 100vw;
+  height: 10vh;
+  background: #3EB489;
+  background: radial-gradient(circle, rgba(62, 180, 137, 1) 0%, rgba(62, 180, 123, 1) 100%);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 0.5vh solid rgba(116, 116, 116, 0.529);
+}
+
+.nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-bar-button {
+  font-family: "Fredoka", sans-serif;
+  border: 0;
+  font-size: 3vh;
+  color: #000;
+  text-decoration: none;
+  background-color: #3eb489;
+  box-shadow: 0 0 0 3px #3eb489;
+  border-radius: 0.8vw;
+  padding: 0.3vh 0.3vw;
+  transition: 0.1s;
+}
+
+.nav-bar-button:hover {
+  box-shadow: 0 0 0 3px #000000;
+  transition: 0.1s;
+}

@@ -1,15 +1,17 @@
 import React from "react"
+import './header.css'
 import NavBar from "./nav-bar"
 
 const Header: React.FC = () => {
 
   return (
     <header>
-      <h1>MisterCyclone</h1>
+      <h1>Alfie Skinner</h1>
       <NavBar links={[
-        {label: "Home", routeTo: "/"}, 
+        {label: "Home", routeTo: "/"},
+        {label: "About", routeTo: "/about"}, 
         {label: "Projects", routeTo: "/projects"}, 
-        {label: "Blog", routeTo: "/blog"},
+        {label: "Experience", routeTo: "/experience"},
         {label: "Contact", routeTo: "/contact"},
       ]}/>
     </header>
