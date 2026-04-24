@@ -1,0 +1,60 @@
+.carousel-container {
+  position: relative;
+  border: solid #3eb489;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  width: 90%;
+}
+
+.carousel-display {
+  display: flex;
+  width: 100%;
+  transition: 0.4s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  display: block;
+  height: 35vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.arrow {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: #3eb489;
+  border: solid #ffffff;
+  color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  transition: 0.1s;
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.arrow:hover {
+  opacity: 0.85;
+  scale: 110%;
+  transition: 0.1s;
+}
