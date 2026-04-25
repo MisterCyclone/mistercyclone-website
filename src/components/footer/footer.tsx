@@ -1,14 +1,28 @@
 import React from "react"
 import './footer.css'
 
-const Footer: React.FC = () => {
+interface LinkCardProp {
+  label: string;
+  link: string;
+  href: string;
+}
+
+interface LinkCardProps {
+  links: LinkCardProp[];
+}
+
+const Footer: React.FC<LinkCardProps> = ({links}) => {
 
   return (
     <footer>
+      <h1>Thank you for visiting!</h1>
       <div className="footer-link-stack">
-        <a className={`footer-link footer-link-github`} href="https://github.com/MisterCyclone"><div className={`pi pi-github footer-icon`}/>GitHub</a>
-        <a className={`footer-link footer-link-linkedin`}  href="https://www.linkedin.com/in/alfie-skinner-b86bb4205/"><div className={`pi pi-linkedin footer-icon`}/>LinkedIn</a>
-        <a className={`footer-link footer-link-youtube`} href="https://www.youtube.com/@MisterCycloneDev"><div className={`pi pi-youtube footer-icon`}/>Youtube</a>
+        <p className="footer-header">Links:</p>
+        {links.map((link) => {
+          return (
+            <a className='footer-link' href={link.href} target='_blank' rel='noopener noreferrer'> <p className="footer-link-header">{link.label}</p>{link.link}</a> 
+          )
+        })}
       </div>
     </footer>
   )

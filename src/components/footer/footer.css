@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  height: 15vh;
+  height: 20vh;
   background-color: #c3c3c3;
   position: relative;
   bottom: 0;
@@ -9,28 +9,36 @@ footer {
   flex-direction: row;
   gap: 5vw;
   align-items: center;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  margin-top: 3vh;
+}
+
+.footer-header {
+  padding: 0;
+  margin: 0;
+  font-size: 3vh;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.footer-link-header {
+  padding: 0;
+  margin: 0;
+  font-size: 2.5vh;
+  font-weight: 500;
 }
 
 .footer-link-stack {
   display: flex;
-  flex-direction: row;
-  gap: 2vw;
+  flex-direction: column;
+  gap: 1vh;
 }
 
 .footer-link {
-  padding: 0;
-  margin: 0;
-  width: fit-content;
-  font-family: "Fredoka", sans-serif;
-  font-size: 3vh;
-  color: black;
-  text-decoration: none;
-  font-weight: normal;
-  transition: 0.3s;
+  font-size: 2.5vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  gap: 0.5vw;
 }
 
 .footer-link-email:hover {
