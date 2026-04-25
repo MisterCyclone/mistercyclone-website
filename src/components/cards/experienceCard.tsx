@@ -1,8 +1,6 @@
 import React from "react";
 import './experienceCard.css'
-import { useState } from "react";
-import useSound from "use-sound";
-import onCardEnter from '../../assets/onCardEnter.wav'
+import usePlaySoundPitched from "../../hooks/usePlaySoundPitched";
 
 interface ExperienceCardProps {
   role?: string;
@@ -12,20 +10,10 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({role, place, timeframe, description}) => {
-
-  const [randomPitch, setRandomPitch] = useState<number>(1);
-
-  const [play] = useSound(onCardEnter, {
-    playbackRate: randomPitch
-  });
-  
-  const handlePitchPlay = () => {
-    setRandomPitch(Number.parseFloat(((Math.random() * (1.1 - 0.9) + 0.9)).toFixed(1)));
-    play();
-  }
+  const { playPitchByType } = usePlaySoundPitched();
 
   return (
-    <div className="experience-card" onMouseEnter={handlePitchPlay}>
+    <div className="experience-card" onMouseEnter={() => playPitchByType('card')}>
       <h2>{role}</h2>
       <h3 className="experience-card-titles">{place}</h3>
       <p className="experience-card-titles" style={{fontStyle: "italic"}}>{timeframe}</p>

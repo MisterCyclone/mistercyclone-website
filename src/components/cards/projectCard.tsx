@@ -3,17 +3,17 @@ import ProjectTag from "../multiples/project-tag";
 import './projectCard.css'
 
 import { useState } from "react";
-import useSound from "use-sound";
-import onImageEnter from '../../assets/onImageEnterwav.wav';
 
 import ImageCarousel from "../imageCarousel/imageCarousel";
+import usePlaySoundPitched  from "../../hooks/usePlaySoundPitched";
+import usePlaySound  from "../../hooks/usePlaySound";
 
 interface ProjectCardTextProps {
   title?: string;
   timeFrame?: string;
   description?: string;
   efforts?: string;
-  video?: string;
+  ytVideo?: string;
   tags?: string[];
   projectLink?: string;
 }
@@ -21,29 +21,20 @@ interface ProjectCardTextProps {
 interface ProjectCardProps {
   textContent?: ProjectCardTextProps;
   thumbnail?: string;
-  pictures?: string[]; 
+  pictures?: string[];
+  video?: string; 
 }
 
-
-const ProjectCard: React.FC<ProjectCardProps> = ({textContent, thumbnail, pictures}) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({textContent, thumbnail, pictures, video}) => {
 
   const [isOpen, setIsOpen] = useState(false);
-  const [randomPitch, setRandomPitch] = useState<number>(1);
-
-  const [play] = useSound(onImageEnter, {
-    playbackRate: randomPitch
-  });
-  
-  const handlePitchPlay = () => {
-    setRandomPitch(Number.parseFloat(((Math.random() * (1.1 - 0.9) + 0.9)).toFixed(1)));
-    console.log(randomPitch)
-    play();
-  }
+  const { playPitchByType } = usePlaySoundPitched();
+  const { playByType } = usePlaySound();
 
   return (
     <div className='project-card'>
       { textContent.title && <h1>{textContent.title}</h1>}
-      { thumbnail && <img src={thumbnail} className="project-card-main-image" onMouseEnter={handlePitchPlay}/> }
+      { thumbnail && <img src={thumbnail} className="project-card-main-image" onMouseEnter={() => playPitchByType('clickable')}/> }
       { textContent.timeFrame && <h2>{textContent.timeFrame}</h2> }
       { textContent.tags && 
         <>
@@ -55,7 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({textContent, thumbnail, pictur
           </div>
         </>
       }
-      <button className="project-open-button" onMouseEnter={handlePitchPlay} onClick={() => {setIsOpen(!isOpen)}}>
+      <button className="project-open-button" onMouseEnter={() => playByType('clickable')} onClick={() => {setIsOpen(!isOpen); playByType('click') } }>
         {isOpen ? 'Close Project' : 'Explore Project'}
       </button>
 
@@ -63,10 +54,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({textContent, thumbnail, pictur
         <h2>About</h2>
         <p>{textContent.description}</p>
         <p>{textContent.efforts}</p>
-        { textContent.video && 
+        { textContent.ytVideo && 
           <>
             <h2>Video</h2> 
-            <iframe className="project-card-video" src={textContent.video}/> 
+            <iframe className="project-card-video" src={textContent.ytVideo}/> 
+          </>
+        }
+        { video && 
+          <>
+            <h2>Video</h2> 
+            <video className="project-card-video" src={video} controls>
+              <source src={video} type="video/mp4"/>
+            </video> 
           </>
         }
 
@@ -77,9 +76,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({textContent, thumbnail, pictur
           </> 
         }
         { textContent.projectLink &&
-          <a className="project-link" href={textContent.projectLink} onMouseEnter={handlePitchPlay}>Link to Project</a>
+          <a className="project-link" href={textContent.projectLink} target='_blank' rel='noopener noreferrer' onMouseEnter={() => playByType('clickable')}>Link to Project</a>
         }
-        <button className="project-open-button" onMouseEnter={handlePitchPlay} onClick={() => {setIsOpen(!isOpen)}}>
+        <button className="project-open-button" onMouseEnter={() => playByType('clickable')} onClick={() => {setIsOpen(!isOpen)}}>
           {isOpen ? 'Close Project' : 'Explore Project'}
         </button>
       </div>

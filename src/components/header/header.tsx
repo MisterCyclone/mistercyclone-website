@@ -9,10 +9,9 @@ const Header: React.FC = () => {
       <h1>Alfie Skinner</h1>
       <NavBar links={[
         {label: "Home", routeTo: "/"},
-        {label: "About", routeTo: "/about"}, 
-        {label: "Projects", routeTo: "/projects"}, 
+        {label: "About", routeTo: "/about"},
         {label: "Experience", routeTo: "/experience"},
-        {label: "Contact", routeTo: "/contact"},
+        {label: "Projects", routeTo: "/projects"}, 
       ]}/>
     </header>
   )

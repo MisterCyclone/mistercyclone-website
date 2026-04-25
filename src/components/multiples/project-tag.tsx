@@ -1,18 +1,18 @@
 import React from "react";
-import useSound from "use-sound";
-import '../cards/project-card.css'
-import ontagHover from '../../assets/onTagHover.wav'
+import '../cards/projectCard.css'
+import usePlaySoundPitched  from "../../hooks/usePlaySoundPitched";
+
+
 
 interface ProjectTagProps {
   label: string;
 }
 
 const ProjectTag: React.FC<ProjectTagProps> = ({label}) => {
-
-  const [play] = useSound(ontagHover)
+  const { playPitchByType } = usePlaySoundPitched();
 
   return (
-    <div className="project-tag" onMouseEnter={() => play()}>
+    <div className="project-tag" onMouseEnter={() => playPitchByType('tag')}>
       <p>{label}</p>
     </div>
   )
