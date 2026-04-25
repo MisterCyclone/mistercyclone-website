@@ -40,6 +40,6 @@
 }
 
 .about-me-picture:hover {
-  height: 40vh;
+  scale: 110%;
   transition: 0.2s;
 }

@@ -9,6 +9,7 @@ header {
   align-items: center;
   justify-content: space-around;
   border-bottom: 0.5vh solid rgba(116, 116, 116, 0.529);
+  z-index: 1001;
 }
 
 .nav-bar {

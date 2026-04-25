@@ -110,6 +110,7 @@
   aspect-ratio: 16 / 9;
   border: solid #3eb489;
   width: 90%;
+  box-shadow: 0 0.5vw 0.5vw rgb(0 0 0 / 0.2);
 }
 
 .project-link {

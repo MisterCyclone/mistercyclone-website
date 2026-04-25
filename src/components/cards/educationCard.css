@@ -1,13 +1,15 @@
 .education-container {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  width: 85%;
   gap: 1vw;
   padding: 1.5vh 1vw;
   border-radius: 0.50vw;
   background-color: white;
-  box-shadow: 0 0 0 2px #3eb489;
+  border:solid #3eb489;
+  box-shadow: 0 0.5vw 0.5vw rgb(0 0 0 / 0.2);
   margin: 3vh 0;
+  transition: 0.1s;
 }
 
 .education-card {
@@ -15,6 +17,12 @@
   flex-direction: column;
   border-radius: 0.50vw;
   transition: 0.1s;
-  width: 70vw;
   white-space: pre-line;
+}
+
+.education-container:hover {
+  background: #9aebcd;
+  box-shadow: 0 0.5vw 0.5vw rgb(0 0 0 / 0.4);
+  transition: 0.2s;
+  scale: 103%;
 }
