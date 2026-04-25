@@ -1,0 +1,17 @@
+{
+  "github": {
+    "label": "GitHub: ",
+    "href": "https://github.com/MisterCyclone",
+    "link": "https://github.com/MisterCyclone"
+  },
+  "linkedin": {
+    "label": "LinkedIn: ",
+    "href": "https://www.linkedin.com/in/alfie-skinner-b86bb4205",
+    "link": "https://www.linkedin.com/in/alfie-skinner-b86bb4205"
+  },
+  "email": {
+    "label": "Email: ",
+    "href": "mailto:alfiejskinner@proton.me",
+    "link": "alfiejskinner@proton.me"
+  }
+}
